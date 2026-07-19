@@ -1,0 +1,51 @@
+name: Internet Paradox Research Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  analyze-heresy:
+    name: Cultural Audit of 2 + 2 = 5
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v5
+
+    - name: Setup Analytics Environment
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.14.6'
+
+    - name: Run Internet Culture Investigation
+      run: |
+        echo "======================================================================"
+        echo "   COMMENCING DEEP INTERNET ARCHIVE SCAN: CASE FILE '2 + 2 = 5'"
+        echo "======================================================================"
+        
+        echo -e "\n[SCANNING SOURCE 1: DYSTOPIAN LITERATURE]"
+        echo "-> Source: George Orwell's '1984' (Published 1949)"
+        echo "-> Concept: Psychological Gaslighting / Doublethink"
+        echo "-> Context: The ultimate internet meme originated as a tool of political control."
+        echo "   In the novel, the Party enforces the belief that '2 + 2 = 5' to prove that"
+        echo "   the state controls objective reality itself. The internet adopted this to"
+        echo "   troll pedantic math arguments online."
+
+        echo -e "\n[SCANNING SOURCE 2: COMPUTER LOGIC FAILURE & FLOAT BLOOPERS]"
+        echo "-> Source: Floating-Point Arithmetic Realities"
+        echo "-> Concept: 'For extremely large values of 2, and small values of 5...'"
+        echo "-> Context: In computer science, rounding errors can create memes. If a system"
+        echo "   rounds 2.4 up to 2, and rounds 4.8 up to 5, a poorly coded interface can"
+        echo "   accidentally display '2 + 2 = 5' due to hidden floating-point formatting."
+
+        echo -e "\n[SCANNING SOURCE 3: INTERNET GASLIGHTING CULTURE]"
+        echo "-> Source: Social Media 'Debates' and Trolling"
+        echo "-> Concept: Refusal to admit defeat in comment sections"
+        echo "-> Context: The internet uses '2 + 2 = 5' as a badge of honor for anyone who"
+        echo "   refuses to back down in an online argument, even when completely proven wrong."
+
+        echo "======================================================================"
+        echo " STATUS: INQUIRY COMPLETE. REALITY CONFIRMED AS STABLE."
+        echo "======================================================================"
